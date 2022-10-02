@@ -1,0 +1,40 @@
+#footer_area{
+  background: $bkColor;
+  position: relative;
+  .top{
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    i{
+      width: 40px;
+      height: 40px;
+      background: $pColor;
+      color: $whiteColor;
+      padding-top: 12px;
+      display: block;
+      border-radius: 5px;
+      transition: 0.3s;
+      &:hover{
+        background: $sColor;
+      }
+    }
+  }
+  .logo_area{
+    width: 200px;
+    margin: 0 auto 20px; 
+  }
+  .socila_area ul{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .copyright{
+    color: $whiteColor;
+    p{
+      font-size: 13px;
+      span{
+        color: red;
+      }
+    }
+  }
+}

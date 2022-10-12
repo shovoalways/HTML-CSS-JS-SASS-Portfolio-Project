@@ -1,0 +1,140 @@
+// Color
+$pColor: #eb7966;
+$sColor: #f4c9c2;
+$bgColor: #f9ebea;
+$whiteColor: #fff;
+$bkColor: #11184f;
+
+// Font Weight
+$fontWSM: 400;
+$fontWMD: 600;
+$fontWXL: 900;
+
+body,
+p {
+  font: {
+    size: 16px;
+    weight: $fontWSM;
+  }
+}
+p {
+  margin: 0 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $fontWXL;
+  margin: 0 0 15px;
+  line-height: 1.2em;
+}
+
+// Main Width
+$small: 200px;
+$medium: 767px;
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    width: 96%;
+  }
+}
+
+// Paddings
+$paddingSM: 10px 0;
+.paddingXL {
+  padding: 60px 0;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    padding: 25px 0;
+  }
+}
+
+// Margin
+.m-top {
+  margin-top: 45px;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    margin-top: 25px;
+  }
+}
+
+// Socila Area Style
+.socila_area {
+  ul {
+    text-align: right;
+    li {
+      margin-left: 15px;
+    }
+    a {
+      display: block;
+      background: $sColor;
+      width: 40px;
+      height: 40px;
+      font-size: 15px;
+      color: $bkColor;
+      text-align: center;
+      padding-top: 8px;
+      border-radius: 30px;
+      i {
+        margin: 0;
+      }
+      &:hover {
+        background: $bkColor;
+        color: $sColor;
+      }
+    }
+    i.fa-solid{
+            display: block;
+      background: $sColor;
+      width: 40px;
+      height: 40px;
+      font-size: 15px;
+      color: $bkColor;
+      text-align: center;
+      padding-top: 12px;
+      transition: 0.3s;
+      cursor: pointer;
+      border-radius: 30px;
+      &:hover {
+        background: $whiteColor;
+        color: $sColor;
+      }
+    }
+  }
+}
+
+// Call To Action Button
+.btn-cta {
+  background: $pColor;
+  color: $whiteColor;
+  display: inline-block;
+  padding: 12px 25px;
+  font-weight: $fontWMD;
+  border-radius: 5px;
+  margin-top: 5px;
+  &:hover {
+    background: $bkColor;
+  }
+}
+
+// Titile & Sub Title Style
+.title {
+  font-size: 60px;
+  line-height: 1em;
+  margin-bottom: 10px;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    font-size: 25px;
+  }
+}
+.sub-title {
+  font: {
+    size: 25px;
+    weight: $fontWMD;
+  }
+  line-height: 1em;
+  margin-bottom: 0;
+  @media only screen and (min-width: $small) and (max-width: $medium) {
+    font-size: 15px;
+  }
+}
